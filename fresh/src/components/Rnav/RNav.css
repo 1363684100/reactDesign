@@ -1,0 +1,27 @@
+.am-navbar-left div svg{
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+
+.am-search{
+    width: 200px;
+    background-color: transparent!important;
+}
+
+
+.am-search-cancel{
+    margin-right: -40px!important;
+}
+
+.am-navbar{
+    position: relative;
+    top: 0px;
+    height: 45px;
+    width: 100%;
+    /* background-image: url(../../static/images/bg.jpg)!important; */
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+}
