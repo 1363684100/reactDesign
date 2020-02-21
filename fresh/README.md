@@ -1,72 +1,73 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### FreshApp
 
-## Available Scripts
+#### 1.安装依赖
 
-### `yarn add`
+从Github上 clone or download 下来项目，解压后有两个文件夹：fresh 和 server ; fresh 文件夹里是App项目，server 文件夹里是后台数据(数据少的可怜....还请见谅)
+
+首先我们要做的就是安装依赖：
+
+> 在 server 文件夹的根目录下执行控制台命令(cmd)：
+>
+> `npm install`
+>
+> 在 fresh 文件夹的根目录下执行控制台命令(cmd)：
+>
+> `npm install`
+
+#### 2.运行后台
+
+在 server 文件夹的根目录下执行控制台命令(cmd)
+
+> `node server.js`
+
+#### 3.运行项目
+
+> 在 fresh 文件夹的根目录下执行控制台命令(cmd)：
+>
+> `yarn start`
+
+#### 4.项目介绍
+
+该项目是一款基于React开发的生鲜外卖App；分为主页、订单、购物车和个人中心四大板块。
+
+##### (1).主页板块
+
+主页大致有4个部分：TabBar、轮播图、广告、部份商品；
+
+TabBar是主页的最上端：有定位功能，搜索框；
+
+> 定位：点击左上角的地理位置(默认是北京)，进入Location组件，根据IP地址获取当前地址；
+>
+> <!--定位地址默认取前两位；由于360的接口不稳定，获取定位时常会报错-->
+>
+> <!--莫慌，千山万水总是情，多试几遍行不行？-->
+
+轮播图是用 AntDesign Mobile组件库实现的，使用 fetch 向后台发送请求，获取图片；
+
+广告部份的话，请无视！<!--跳转链接已经被干掉，请上级指示！-->
+
+部份商品：在主页的最下方就是商品了，下拉刷新更多<!--虽然还是那几个商品-->
+
+##### (2).订单板块
+
+订单是之前完成的一些订单，个人觉得没啥意思，最大的用处就是点击会进入店铺了
+
+##### (3).购物车板块
+
+购物车使用 Redux 实现，花了不少时间；
+
+购物车空空如也~ <!--没有选购商品当然是空空如也了-->
+
+##### (4).我的板块
+
+我的 主要实现用户的登陆和注销，<!--首次登陆默认注册-->
+
+登陆之后再次点击会进入注销步骤
 
 
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The End~
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<!--轻喷！项目确实还有点欠缺-->
